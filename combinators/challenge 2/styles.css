@@ -7,10 +7,6 @@ section h1 + p {
 	color: black;
 }
 
-section p + p {
-	color: gray;
-}
-
 section p ~ p {
 	color: gray;
 }
