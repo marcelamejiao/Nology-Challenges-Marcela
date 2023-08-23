@@ -1,0 +1,25 @@
+p {
+	margin-left: 20px;
+}
+
+section h1 + p {
+	font-style: italic;
+	color: black;
+}
+
+section p ~ p {
+	color: gray;
+}
+
+section h2 ~ p {
+	text-decoration: underline;
+	color: black;
+}
+
+body section > h3 + p  {
+	color: black;
+}
+
+section h3 ~ p {
+	color: blue;
+}
