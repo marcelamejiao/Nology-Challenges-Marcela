@@ -1,0 +1,37 @@
+div#blue{
+	background-color: rgba(0, 229, 255, 0.485);
+}
+
+div#orange{
+	background-color: orange;
+}
+
+div#pink{
+	background-color: rgb(241, 146, 200);
+}
+
+div#red{
+	background-color: red;
+}
+
+div#green{
+	background-color: rgba(0, 255, 51, 0.565);
+}
+
+div {
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1px;
+}
+
+section {
+	display: flex;
+	height: 20px;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
