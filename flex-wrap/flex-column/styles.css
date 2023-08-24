@@ -1,0 +1,64 @@
+div#blue{
+	background-color: rgba(0, 229, 255, 0.283);
+}
+
+div#red{
+	background-color: rgba(255, 0, 0, 0.673);
+}
+
+div#green{
+	background-color: rgba(146, 241, 146, 0.911);
+}
+
+div#orange{
+	background-color: rgba(255, 123, 0, 0.786);
+}
+
+div#pink{
+	background-color: rgba(255, 0, 204, 0.503);
+}
+
+div#grey{
+	background-color: rgba(94, 91, 95, 0.762);
+}
+
+div#babyBlue{
+	background-color: rgba(0, 170, 255, 0.215);
+}
+
+div#oceanBlue{
+	background-color: rgba(0, 170, 255, 0.713);
+}
+
+body {
+	display: flex;
+	flex-direction: column-reverse;
+	border: 2px solid black;
+}
+
+div {
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section1 {
+	display: flex;
+	margin: 10px;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	flex-direction: column-reverse;
+}
+
+.section2 {
+	display: flex;
+	margin: 10px;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+}
