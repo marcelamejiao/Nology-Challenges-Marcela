@@ -19,8 +19,8 @@ div#green{
 }
 
 div {
-	width: 200px;
-	height: 200px;
+	width: 300px;
+	height: 300px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -29,7 +29,6 @@ div {
 
 section {
 	display: flex;
-	height: 20px;
 	width: 100%;
 	flex-wrap: wrap;
 	align-items: center;
