@@ -1,0 +1,26 @@
+@mixin bg-height ($bg-color, $height) {
+	background-color: $bg-color;
+	height: $height;
+}
+
+@mixin flex-flags ($display: flex) {
+	display: $display;
+}
+
+@mixin german-flag {
+	@media screen and (max-width: 600px) {
+		@content
+	}
+};
+
+@mixin belgian-flag {
+	@media screen and (min-width: 601px) and (max-width: 900px) {
+		@content
+	}
+};
+
+@mixin irish-flag {
+	@media screen and (min-width: 901px) {
+		@content
+	}
+};

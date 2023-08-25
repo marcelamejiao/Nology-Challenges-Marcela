@@ -1,0 +1,56 @@
+@use "./partials/mixins.scss";
+
+// placeholder
+%border-styling {
+	border: 0.5px solid black;
+	width: 100%;
+}
+
+.colour1, .colour2, .colour3 {
+	@extend %border-styling;
+}
+
+@include mixins.german-flag {
+	.colour1 {
+		@include mixins.bg-height(black, 200px);
+	}
+	.colour2{
+		@include mixins.bg-height(red, 200px);
+	}
+	.colour3 {
+		@include mixins.bg-height(yellow, 200px);
+	}
+}
+
+@include mixins.belgian-flag {
+	.flags {
+		@include mixins.flex-flags;
+	}
+
+	.colour1 {
+		@include mixins.bg-height(black, 600px);
+	}
+	.colour2{
+		@include mixins.bg-height(yellow, 600px);
+	}
+	.colour3 {
+		@include mixins.bg-height(red,600px);
+	}
+}
+
+ @include mixins.irish-flag {
+	.flags {
+		@include mixins.flex-flags;
+	}
+
+	.colour1 {
+		@include mixins.bg-height(green, 600px);
+	}
+	.colour2{
+		@include mixins.bg-height(white, 600px);
+	}
+	.colour3 {
+		@include mixins.bg-height(orangered, 600px);
+	}
+}
+

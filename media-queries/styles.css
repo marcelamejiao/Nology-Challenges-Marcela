@@ -1,0 +1,53 @@
+.colour1, .colour2, .colour3 {
+  border: 0.5px solid black;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .colour1 {
+    background-color: black;
+    height: 200px;
+  }
+  .colour2 {
+    background-color: red;
+    height: 200px;
+  }
+  .colour3 {
+    background-color: yellow;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .flags {
+    display: flex;
+  }
+  .colour1 {
+    background-color: black;
+    height: 600px;
+  }
+  .colour2 {
+    background-color: yellow;
+    height: 600px;
+  }
+  .colour3 {
+    background-color: red;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 901px) {
+  .flags {
+    display: flex;
+  }
+  .colour1 {
+    background-color: green;
+    height: 600px;
+  }
+  .colour2 {
+    background-color: white;
+    height: 600px;
+  }
+  .colour3 {
+    background-color: orangered;
+    height: 600px;
+  }
+}
