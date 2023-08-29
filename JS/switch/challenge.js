@@ -61,5 +61,4 @@ switch (parents) {
 	default:
 	console.log(`Youre ayes are: ${parent1} and ${parent2} +  
 	the chances of your child having brown:0% green:1% blue:99%`);
-	break;
 }
