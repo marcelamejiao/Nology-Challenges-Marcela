@@ -77,6 +77,14 @@ console.log(reminderOfTwoNumbers(number1,number2));
 // // 83 + 34 = 117
 // lessThan100(3, 77) ➞ true
 
+function calculatePoints (pointersTwo, pointersThree) {
+	let pointersTwo = points * 2;
+	let pointersThree = points * 3;
+	return pointersTwo + pointersThree;
+}
+
+console.log(calculatePoints(10,10));
+
 function basketballPoints (firstNumber, secondNumber) {
 	if (firstNumber + secondNumber < 100) {
 		return true
