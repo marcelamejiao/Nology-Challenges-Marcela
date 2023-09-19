@@ -1,0 +1,50 @@
+[
+  {
+    "albumTitle": "Brand New Eyes",
+    "bandName": "Paramore",
+    "albumRating": 5,
+    "image": "/bne.png"
+  },
+  {
+    "albumTitle": "Riot!",
+    "bandName": "Paramore",
+    "albumRating": 5,
+    "image": "/riot.png"
+  },
+  {
+    "albumTitle": "Paramore",
+    "bandName": "Paramore",
+    "albumRating": 4,
+    "image": "/paramore.png"
+  },
+  {
+    "albumTitle": "This is why!",
+    "bandName": "Paramore",
+    "albumRating": 3,
+    "image": "/thisiswhy.png"
+  },
+  {
+    "albumTitle": "21",
+    "bandName": "Adele",
+    "albumRating": 5,
+    "image": "/21.png"
+  },
+  {
+    "albumTitle": "25",
+    "bandName": "Adele",
+    "albumRating": 4,
+    "image": "/25.jpg"
+  },
+  {
+    "albumTitle": "Laundry Service",
+    "bandName": "Shakira",
+    "albumRating": 4,
+    "image": "/laundry.jpg"
+  },
+  {
+    "albumTitle": "Pies Descalzos",
+    "bandName": "Shakira",
+    "albumRating": 5,
+    "image": "/pies.jpg"
+  }  
+]
