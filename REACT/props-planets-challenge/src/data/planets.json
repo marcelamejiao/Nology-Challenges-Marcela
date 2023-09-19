@@ -1,0 +1,69 @@
+[
+	{
+		"planetName": "Mercury",
+		"image": "https://space-facts.com/wp-content/uploads/mercury-v2.jpg",
+		"distanceFromSun": 57909227,
+		"diameterInKm": 4879,
+		"numberOfMoons": 0,
+		"lengthOfYear": 88
+	},
+	{
+		"planetName": "Venus",
+		"image": "https://space-facts.com/wp-content/uploads/venus-v2.jpg",
+		"distanceFromSun": 108209475,
+		"diameterInKm": 12104,
+		"numberOfMoons": 0,
+		"lengthOfYear": 225
+	},
+	{
+		"planetName": "Earth",
+		"image": "https://space-facts.com/wp-content/uploads/earth-v2.jpg",
+		"distanceFromSun": 149598262,
+		"diameterInKm": 12742,
+		"numberOfMoons": 1,
+		"lengthOfYear": 365.24
+	},
+	{
+		"planetName": "Mars",
+		"image": "https://space-facts.com/wp-content/uploads/mars-v2.jpg",
+		"distanceFromSun": 227943824,
+		"diameterInKm": 6779,
+		"numberOfMoons": 2,
+		"lengthOfYear": 687
+	},
+	{
+		"planetName": "Jupiter",
+		"image": "https://space-facts.com/wp-content/uploads/jupiter-v2.jpg",
+		"distanceFromSun": 778340821,
+		"diameterInKm": 139822,
+		"numberOfMoons": 79,
+		"lengthOfYear": 4380
+	},
+	{
+		"planetName": "Saturn",
+		"image": "https://space-facts.com/wp-content/uploads/saturn-v2.jpg",
+		"distanceFromSun": 1426666422,
+		"diameterInKm": 116464,
+		"numberOfMoons": 82,
+		"lengthOfYear": 10585
+	},
+	{
+		"planetName": "Uranus",
+		"image": "https://space-facts.com/wp-content/uploads/uranus-v2.jpg",
+		"distanceFromSun": 2870658186,
+		"diameterInKm": 50724,
+		"numberOfMoons": 27,
+		"lengthOfYear": 30660
+	},
+	{
+		"planetName": "Neptune",
+		"image": "https://space-facts.com/wp-content/uploads/neptune-v2.jpg",
+		"distanceFromSun": 4498396441,
+		"diameterInKm": 49244,
+		"numberOfMoons": 5,
+		"lengthOfYear": 60225
+	}
+]
+
+
+
