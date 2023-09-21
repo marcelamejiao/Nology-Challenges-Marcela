@@ -2,6 +2,7 @@ import { useState } from "react";
 import Form from "./Components/Form";
 import BusinessCard from "./Components/BusinessCard";
 import HookForm from "./Components/HookForm";
+import styles from './App.module.scss'
 
 
 function App() {
@@ -13,17 +14,17 @@ function App() {
   const [businessCardData, setBusinessCardData] = useState(null);
 
   return (
-    <>
-      <Form
+    <div className={styles.wrap}>
+      {/* <Form
         handleSubmit={formSubmit}
-      />
+      /> */}
       <BusinessCard 
         businessCardData={businessCardData}
       />
       <HookForm 
         formSubmit={formSubmit}
       />
-    </>
+    </div>
   )
 }
 

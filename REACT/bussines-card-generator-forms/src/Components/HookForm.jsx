@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
+import styles from "./HookForm.module.scss";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 
@@ -34,10 +35,11 @@ const HookForm = ({ formSubmit }) => {
 
 	return (
 		<>
-		<form onSubmit={handleSubmit(localFormSubmit)}>
+		<form className={styles.form} onSubmit={handleSubmit(localFormSubmit)}>
 			<div>
 			<label htmlFor="companyNameInput">Company Name</label>
 			<input 
+				className={styles.field}
 				type="text"  
 				id="companyNameInput"
 				{...register("companyName")}
@@ -45,6 +47,7 @@ const HookForm = ({ formSubmit }) => {
 			<p>{errors.companyName?.message}</p>
 			<label htmlFor="phoneNumberInput">Phone Number</label>
 			<input 
+				className={styles.field}
 				type="tel" 
 				id="phoneNumberInput" 
 				{...register("phoneNumber")}
@@ -54,6 +57,7 @@ const HookForm = ({ formSubmit }) => {
 			<div>
 			<label htmlFor="emailInput">Email</label>
 			<input 
+				className={styles.field}
 				type="email" 
 				id="emailInput"
 				{...register("email")}
@@ -63,6 +67,7 @@ const HookForm = ({ formSubmit }) => {
 			<div>
 			<label htmlFor="descriptionInput">Description</label>
 			<input 
+				className={styles.field}
 				type="text" 
 				id="descriptionInput" 
 				{...register("description")}
@@ -72,6 +77,8 @@ const HookForm = ({ formSubmit }) => {
 			<div>
 			<label htmlFor="imageInput">Image</label>
 			<input 
+				className={styles.field}
+
 				type="file" 
 				id="imageInput" 
 				accept="image/*"
@@ -79,7 +86,7 @@ const HookForm = ({ formSubmit }) => {
 			/>
 			</div>
 			<div>
-				<input value="Save" type="submit" />
+				<input className={styles.button} value="Save" type="submit" />
 			</div>
 		</form>
 		</>
