@@ -21,43 +21,35 @@ const HookForm = ({ formSubmit }) => {
 			<div>
 			<label htmlFor="companyNameInput">Company Name</label>
 			<input 
-				type="text" 
-				name="companyName" 
-				id="companyNameInput" 
-				value={formValues.companyName} 
-				onChange={onInputChange} 
+				type="text"  
+				id="companyNameInput"
+				{...register("companyName")}
 			/>
 			<label htmlFor="phoneNumberInput">Phone Number</label>
 			<input 
 				type="tel" 
-				name="phoneNumber" 
 				id="phoneNumberInput" 
-				value={formValues.phoneNumber} 
-				onChange={onInputChange} 
+				{...register("phoneNumber")}
 			/>
 			</div>
 			<div>
 			<label htmlFor="emailInput">Email</label>
 			<input 
 				type="email" 
-				name="email" 
-				id="emailInput" 
-				value={formValues.email} 
-				onChange={onInputChange} 
+				id="emailInput"
+				{...register("email")}
 			/>
 			</div>
 			<div>
 			<label htmlFor="descriptionInput">Description</label>
 			<input 
 				type="text" 
-				name="description" 
 				id="descriptionInput" 
-				value={formValues.description} 
-				onChange={onInputChange} 
+				{...register("description")}
 			/>
 			</div>
 			<div>
-				<button disabled={!isValid}>Save</button>
+				<input value="Save" type="submit" />
 			</div>
 		</form>
 		</>
