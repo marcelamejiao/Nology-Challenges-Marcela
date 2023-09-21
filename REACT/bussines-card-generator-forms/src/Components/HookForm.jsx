@@ -12,6 +12,12 @@ const schema = yup.object({
 
 const HookForm = ({ formSubmit }) => {
 
+	const localFormSubmit = (data) => {
+		// Because we need to convert the image into a URL, we will convert this before sending it to the parent component
+		data.image = URL.createObjectURL(data.image[0]);
+		
+		formSubmit(data);
+	};
 
 	const {
 		register,
@@ -28,7 +34,7 @@ const HookForm = ({ formSubmit }) => {
 
 	return (
 		<>
-		<form onSubmit={handleSubmit(formSubmit)}>
+		<form onSubmit={handleSubmit(localFormSubmit)}>
 			<div>
 			<label htmlFor="companyNameInput">Company Name</label>
 			<input 
@@ -63,6 +69,15 @@ const HookForm = ({ formSubmit }) => {
 			/>
 			</div>
 			<p>{errors.description?.message}</p>
+			<div>
+			<label htmlFor="imageInput">Image</label>
+			<input 
+				type="file" 
+				id="imageInput" 
+				accept="image/*"
+				{...register("image")}
+			/>
+			</div>
 			<div>
 				<input value="Save" type="submit" />
 			</div>
