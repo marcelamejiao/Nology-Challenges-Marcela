@@ -6,7 +6,8 @@ const Form = ( {handleSubmit} ) => {
 		companyName: '',
 		phoneNumber: '',
 		email: '',
-		description: ''
+		description: '',
+		image: '',
 	};
 
 	const [formValues, setFormValues] = useState(defaultValues);
@@ -37,6 +38,13 @@ const Form = ( {handleSubmit} ) => {
 		const isFormValid = validateForm(newValues);
 		setIsValid(isFormValid);
 	};
+
+	const onImageChange = (event) => {
+		const image = event.target.files[0];
+		const imageURL = URL.createObjectURL(image);
+		const newValues = {...formValues, image: imageURL}
+		setFormValues(newValues)
+	}
 
 	const onSubmit = (event) => {
 		event.preventDefault();
@@ -87,6 +95,17 @@ const Form = ( {handleSubmit} ) => {
 				onChange={onInputChange} 
 			/>
 			</div>
+			<div>
+			<label htmlFor="imageInput">Image</label>
+			<input 
+				type="file" 
+				accept="image/*"
+				name="image" 
+				id="imageInput" 
+				onChange={onImageChange}
+			/>
+			</div>
+
 			<div>
 				<button disabled={!isValid}>Save</button>
 			</div>
