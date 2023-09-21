@@ -1,5 +1,14 @@
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
+
+const schema = yup.object({
+  companyName: yup.string().required(),
+  phoneNumber: yup.number().positive().integer().required(),
+	email: yup.string().email().required(),
+	description: yup.string().required(),
+}).required();
 
 const HookForm = ({ formSubmit }) => {
 
@@ -9,7 +18,9 @@ const HookForm = ({ formSubmit }) => {
 		reset, 
 		formState: { errors, isSubmitSuccessful},
 		handleSubmit,
-	} = useForm();
+	} = useForm({
+    resolver: yupResolver(schema)
+  });
 
 	useEffect(() => {
 		reset();
@@ -25,12 +36,14 @@ const HookForm = ({ formSubmit }) => {
 				id="companyNameInput"
 				{...register("companyName")}
 			/>
+			<p>{errors.companyName?.message}</p>
 			<label htmlFor="phoneNumberInput">Phone Number</label>
 			<input 
 				type="tel" 
 				id="phoneNumberInput" 
 				{...register("phoneNumber")}
 			/>
+			<p>{errors.phoneNumber?.message}</p>
 			</div>
 			<div>
 			<label htmlFor="emailInput">Email</label>
@@ -39,6 +52,7 @@ const HookForm = ({ formSubmit }) => {
 				id="emailInput"
 				{...register("email")}
 			/>
+			<p>{errors.email?.message}</p>
 			</div>
 			<div>
 			<label htmlFor="descriptionInput">Description</label>
@@ -48,6 +62,7 @@ const HookForm = ({ formSubmit }) => {
 				{...register("description")}
 			/>
 			</div>
+			<p>{errors.description?.message}</p>
 			<div>
 				<input value="Save" type="submit" />
 			</div>
