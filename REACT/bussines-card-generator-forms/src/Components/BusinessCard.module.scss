@@ -1,0 +1,23 @@
+.card {
+	width: 50%;
+	border: 0.6rem solid grey;
+	border-radius: 1rem;
+	background-color: rgba(0, 0, 0, 0.962);
+	color: white;
+	text-align: center;
+	opacity: 0.9;
+	box-shadow:0 6px 8px 0 rgba(107, 111, 27, 0.26), 0 8px 25px 0 rgba(107, 111, 27, 0.226);
+	margin: 3rem;
+	font-family: sans-serif;
+	padding: 2rem;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+img {
+	height: 200px;
+	width: 200px;
+	padding: 2rem;
+}
