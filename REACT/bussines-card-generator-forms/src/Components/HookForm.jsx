@@ -78,7 +78,6 @@ const HookForm = ({ formSubmit }) => {
 			<label htmlFor="imageInput">Image</label>
 			<input 
 				className={styles.field}
-
 				type="file" 
 				id="imageInput" 
 				accept="image/*"
